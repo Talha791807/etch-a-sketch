@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px; /* Width of the grid */
+    height: 600px; /* Height of the grid */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff; /* Container background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+    padding: 20px; /* Padding for spacing */
+}
+
+.square {
+    width: calc(25% - 4px); /* Width of each square */
+    height: calc(25% - 4px); /* Height of each square */
+    border: 2px solid #333; /* Border color */
+    box-sizing: border-box;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.square:hover {
+    background-color: #ffcc00; /* Hover color */
+}
+
+#resetButton {
+    margin-top: 20px; /* Margin from the grid */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    background-color: #ffcc00; /* Button color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#resetButton:hover {
+    background-color: #ff9900; /* Hover color */
+}
+
